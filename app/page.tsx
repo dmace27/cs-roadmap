@@ -1,65 +1,53 @@
-import Image from "next/image";
+import PageHeader from "./components/PageHeader";
+import Section from "./components/Section";
+import CallToAction from "./components/CallToAction";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="space-y-8">
+      <PageHeader
+        title="Start Here"
+        description="You do not need any prior experience to begin. This site helps you start coding quickly with a clear, calm path."
+      />
+
+      <div className="space-y-8">
+        <Section title="What this site is">
+          <p>
+            A short guide to get you set up and moving in the right direction.
+            It points you to CS50P as the main learning resource and gives
+            simple structure so you do not have to guess what to do next.
           </p>
+        </Section>
+
+        <Section title="What this site is not">
+          <p>
+            It is not a course, a curriculum, or a place with assignments and
+            quizzes. It will not teach Python in detail. CS50P does the
+            teaching; this site provides the structure around it.
+          </p>
+        </Section>
+
+        <Section title="Self-paced by design">
+          <p>
+            You decide your pace. Some students move quickly, others take more
+            time. Both are normal. The goal is steady progress without pressure
+            or tutorial hopping.
+          </p>
+        </Section>
+      </div>
+
+      <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="space-y-3">
+          <h2 className="text-xl font-semibold text-blue-900">
+            Ready to begin?
+          </h2>
+          <p className="text-slate-600">
+            Start with setup so you can run your first Python program in a few
+            minutes.
+          </p>
+          <CallToAction href="/python/setup" label="Go to Python Setup" />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </div>
     </div>
   );
 }
