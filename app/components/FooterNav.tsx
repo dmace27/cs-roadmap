@@ -1,10 +1,9 @@
 import Link from "next/link";
 
 const navLinks = [
-  { href: "/", label: "Start Here" },
-  { href: "/python/setup", label: "Python Setup" },
-  { href: "/python/how-to-use-cs50p", label: "Use CS50P" },
+  { href: "/", label: "Home" },
   { href: "/roadmap", label: "Roadmap" },
+  { href: "/python/setup", label: "Python Setup" },
   { href: "/resources", label: "Resources" },
   { href: "/teacher-guide", label: "Teacher Guide" },
 ];
@@ -24,9 +23,6 @@ export default function FooterNav() {
             </Link>
           ))}
         </nav>
-        <p className="mt-4 text-sm text-slate-500">
-          This site provides structure and reassurance. CS50P does the teaching.
-        </p>
       </div>
     </footer>
   );

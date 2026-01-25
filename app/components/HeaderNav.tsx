@@ -1,9 +1,8 @@
 import Link from "next/link";
 
 const navLinks = [
-  { href: "/", label: "Start Here" },
-  { href: "/python/setup", label: "Python Setup" },
-  { href: "/python/how-to-use-cs50p", label: "Use CS50P" },
+  { href: "/", label: "Home" },
+  { href: "/what-is-cs", label: "What is Computer Science?"},
   { href: "/roadmap", label: "Roadmap" },
   { href: "/resources", label: "Resources" },
   { href: "/teacher-guide", label: "Teacher Guide" },
@@ -19,11 +18,8 @@ export default function HeaderNav() {
               href="/"
               className="text-4xl font-bold tracking-tight text-blue-900"
             >
-              CS Roadmap
+              Computer Science Roadmap 
             </Link>
-            <p className="text-sm text-slate-600">
-              A calm, self-paced guide to CS50P and Python foundations.
-            </p>
           </div>
         </div>
         <nav className="mt-5 flex flex-wrap gap-2 text-sm text-slate-600 font-mono">
@@ -41,3 +37,4 @@ export default function HeaderNav() {
     </header>
   );
 }
+ 
