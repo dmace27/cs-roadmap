@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const navLinks = [
   { href: "/", label: "Home" },
+  { href: "/what-is-cs", label: "What is Computer Science?"},
   { href: "/roadmap", label: "Roadmap" },
   { href: "/python/setup", label: "Python Setup" },
-  { href: "/resources", label: "Resources" },
-  { href: "/teacher-guide", label: "Teacher Guide" },
+  { href: "/resources", label: "Resources" }
 ];
 
 export default function FooterNav() {

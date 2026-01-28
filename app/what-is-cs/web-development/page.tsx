@@ -44,9 +44,15 @@ export default function WebDevelopmentPage() {
               description="To learn more about Web Development, check out these resources:"
             >
               <ul className="space-y-2 text-slate-700">
-                <li>Resource 1</li>
-                <li>Resource 2</li>
-                <li>Resource 3</li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=pkdgVYehiTE" target="_blank">Front-End vs Back-End vs Full-Stack Development Video</a>
+                </li>
+                <li>
+                  <a href="https://www.coursera.org/articles/front-end-vs-back-end" target="_blank">Front vs Back end Development Article</a>
+                  </li>
+                <li>
+                  <a href="https://www.freecodecamp.org/news/learn-relational-database-basics-key-concepts-for-beginners" target="_blank">Learning Relational Databases</a>
+                </li>
               </ul>
             </Section>
     </div>

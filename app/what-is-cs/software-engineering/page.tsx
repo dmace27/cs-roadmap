@@ -32,9 +32,15 @@ export default function SoftwareEngineeringPage() {
         description="To learn more about Software Engineering, check out these resources:"
       >
         <ul className="space-y-2 text-slate-700">
-          <li>Resource 1</li>
-          <li>Resource 2</li>
-          <li>Resource 3</li>
+          <li>
+            <a href="https://youtu.be/mAFoROnOfHs?si=Do378iZklCvqIdh0" target="_blank">Crash Course on Git and Version Control</a>
+          </li>
+          <li>
+            <a href="https://google.github.io/eng-practices/" target="_blank">Software Engineering Practices from Google</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=sB2iQSvrcG0" target="_blank">Software Engineering Basics Video</a>
+          </li>
         </ul>
       </Section>
     </div>
